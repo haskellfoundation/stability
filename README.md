@@ -5,9 +5,10 @@ This is the home of the Haskell Foundation's Stability Working Group (SWG).
 ## Our Charter
 
 The Haskell language serves (at least) two roles:
+
  * As a production language used by thousands of developers to get their day job done.
  * As a research language, exploring the bleeding edge of statically typed, purely functional programming.
- * 
+
 The breaking changes necessary for (B) impose substantial costs on (A), so there is a real tension between these two goals.   This tension can leave group (A) frustrated as an apparently endless stream of changes; and group (B) frustrated at the brake on progress that (A) imposes.
 
 And yet many of the features developed by (B) are wildly popular with (A).  No one is advocating freezing Haskell, halting all further language development.  Indeed most of the proposals considered by the GHC Steering Committee (over 400 of them in the last three years) come from industry not academia.
