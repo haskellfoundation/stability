@@ -46,7 +46,7 @@ active-repositories: hackage.haskell.org, X
 ```
 This will cause repository X to be consulted first for any given version of a package, but allow other versions to come from Hackage. For example, if `X` contains `A-1` and `A-2`, and Hackage contains `A-2` and `A-3`, then `A-1` and `A-2` will be taken from `X`, but `A-3` can be taken from Hackage. ([Here is the documentation](https://cabal.readthedocs.io/en/3.6/cabal-project.html) for active-repositories; oddly, the list is searched last-to-first.)
 
-We refer to this style of additional repository as a**Hackage overlay**, since it provides a way to _override_ specific versions of packages which appear in Hackage, while using Hackage for everything else normally.
+We refer to this style of additional repository as a **Hackage overlay**, since it provides a way to _override_ specific versions of packages which appear in Hackage, while using Hackage for everything else normally.
 
 Additional package repositories behave well in the face of changes. Cabal will recompute the build plan whenever repositories are changed or updated; and since Cabal identifies packages by a hash which includes the hash of the source tarball, Cabal will never get confused between packages from different repositories, and it will cope gracefully even if package sources are _mutated_ in the repository.
 
