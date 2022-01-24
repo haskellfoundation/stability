@@ -1,0 +1,79 @@
+# 24 Jan 2022
+
+* Update on GHC.X.hackage proposal
+* Update on advertising the group
+* Discussion of next steps
+
+## What are we going to do?
+
+I (Chris) think we have agreed that the key people of concern are the OSS package maintainers working in their free time. We should care about them, even from the perspective of commercial use, because the health of the ecosystem is critically dependent on them and their time is in short supply. (Commercial users are freeloading off them of course, so this really makes tons of sense.)
+
+Although we all like the idea of stability, scratch an OSS developer and you will very quickly
+realise that, while they might be very keen on the *idea* of stability, they are not so hot on the *causes* of stability, unless those causes are being applied to *other* developers, because of
+course those causes entail processes that will inevitably check the disruptive changes that they might wish to make.
+
+We have seen this quite clearly in our meetings (and other calls I have been on) where I think every single attempt to get moving on or discuss a proposal gets shot down with varying degrees of grace, humour and rationality.
+
+## From which I conclude
+
+I think there is no point at all in trying to force the issue top-down on the community. There is
+clearly no appetite whatsoever for intrusive measures and the lifetime of any attempt to put them in place will be nasty, brutish, and short.
+
+## However...
+
+I do think this issue is nevertheless important  for the long-term health and flourishing of  the
+Haskell ecosystem. I predict that we are going to see more flare-ups around disruptive proposals in
+the future. (I even have my eyes on a couple.)
+
+## What I (Chris) would like to do
+
+* We continue to meet regularly (say, approximately fortnightly) to discuss topics of interest related to the stability of the Haskell ecosystem.
+* We collect and document scheduled disruptive changes to the ecosystem.
+* We discuss those changes on the calls.
+* Any initiatives that require any more than this (like the GHC.X.hackage proposal) gets spun off into a separate activity.
+* People are free to attend the calls as their interest and availability dictates. If there is no  appetite for these discussions then we can mothball the group or disband it altogether.
+
+Note this proposed course of action is totally non-disruptive. Nobody is being asked to even
+join the calls if they have better things to do, and I am proposing that we merely discuss upcoming disruptions rather than review them. (Though, those that have been paying attention will realise that 'discussion' was really all I was aiming for all along.)
+
+What do y'all think?
+
+
+## Notes of the meeting
+### Present
+
+Andrew Boardman, Ben Gamari, Chris Dornan, Michael PJ, Mikolaj Konarski, Trevis Elser, Adam Bergmark, Fellow Jitster = Bodigrim
+
+
+### Actions
+
+* Continue to meet :-).   No one thinks this is a waste of time.
+  * Discuss upcoming GHC releases, their timing, and their content (esp breaking changes)
+* Action **Chris**: establish a GitHub repo to put minutes, proposals, and other collateral.  Migrate existing docs into it.
+  * Here's the repo: https://github.com/haskellfoundation/stability
+* Action **Chris**: announce our existence, point to the repo. This week! Current charter is here.
+* Action **Chris**: talk to Jasper about how to create a Category (under HF) in Discourse.   (Maybe rename the existing "Working Group" as "HF birth working group".)  
+* Action **Trevis**: Collect the previous ideas for ways to help the community into a document somehow.
+* Action **Ben**: Progress the head.Hackage proposal.
+  * Move into the repo.
+  * Some fixes to head.hackage itself
+  * Polish the proposal; agree; and advertise.
+  * (The working group agreed the direction of travel.)
+  * Next: meeting, agree final words before going to the community.
+
+**We discussed the GHC.X.hackage proposal**
+
+If the current version is A-4.5, what should the version in GHC.X.hackage be?
+ * A-4.5?
+ * A-4.5.0.1?
+
+Problems with A-4.5
+* It's a lie.  It isn't exactly A-4.5.  It's "A-4.5 from GHC.X.hackage".
+* If you just naively read a Cabal install plan, you might think it used "the" A-4.5.
+
+Problems with A-4.5
+* It might still be a lie: we may be forced to change API
+* The author might release A-4.5.0.1, but GHC.X.hackage would overlay it.
+
+**We concluded that we should stick with "no version bump" in the overlay, at least for now.**  But the proposal should spell this out.
+
