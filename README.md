@@ -1,7 +1,7 @@
 # Haskell Foundation Stability Working Group
 
 This is the home of the Haskell Foundation's Stability Working Group (SWG), a group for studying and
-promoting stability in the Haskell ecosystem.
+promoting API stability in the Haskell ecosystem.
 
 ## Our Charter
 
