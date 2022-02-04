@@ -7,6 +7,10 @@ promoting stability in the Haskell ecosystem.
 
 See [our charter](charter/CHARTER.md) for a statement of the purpose of the group.
 
+## Contacting Us
+
+To email the current members, send an email to mailto:stability-working-group@chrisdornan.com
+
 ## Current Members
 
 - HF
@@ -23,8 +27,8 @@ See [our charter](charter/CHARTER.md) for a statement of the purpose of the grou
   - HLS, Meta: Pepe Iborra
   - head.hackage: Ryan Scott (cannot attend calls)
 - Library authors
-  - Dmitrii Kovanikov (package maintainer -- sent an email to the board)
-  - Tom Sydney Kerckhove (developer -- sent an email to the board)
+  - Dmitrii Kovanikov
+  - Tom Sydney Kerckhove
   - Viktor Dukhovni
 - Consultants
   - Trevis Elser
