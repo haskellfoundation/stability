@@ -5,7 +5,10 @@ promoting stability in the Haskell ecosystem.
 
 ## Our Charter
 
-See [our charter](charter/CHARTER.md) for a statement of the purpose of the group.
+See [our charter](charter/CHARTER.md) for a statement of the purpose of the group and this
+[Haskell Discourse
+posting](https://discourse.haskell.org/t/haskell-foundation-stability-working-group/4026)
+for the announcement of the group.
 
 ## Contacting Us
 
