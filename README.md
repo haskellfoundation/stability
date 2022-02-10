@@ -23,7 +23,6 @@ To email the current members, send an email to mailto:stability-working-group@ch
   - Andrew Boardman
 - Ecosystem
   - CLC: Bodigrim
-  - CLC: Oleg Grenus
   - GHC: Ben Gamari
   - Stackage, Hackage: Adam Bergmark
   - Cabal: Mikolaj Konarski
@@ -37,3 +36,4 @@ To email the current members, send an email to mailto:stability-working-group@ch
   - Trevis Elser
 - Industrial users
   - Neil Mitchell
+  - Michael Peyton Jones
