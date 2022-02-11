@@ -36,9 +36,10 @@ The Stability Working Group currently has the following members:
   - HLS, Meta: Pepe Iborra
   - head.hackage: Ryan Scott (cannot attend calls)
 - Library authors
-  - Dmitrii Kovanikov (package maintainer -- sent an email to the board)
-  - Tom Sydney Kerckhove (developer -- sent an email to the board)
+  - Tom Sydney Kerckhove (sent an email to the board)
   - Viktor Dukhovni
+- Educators
+  - Dmitrii Kovanikov (sent an email to the board)
 - Consultants
   - Trevis Elser
 - Industrial users

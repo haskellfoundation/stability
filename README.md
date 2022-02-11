@@ -29,9 +29,10 @@ To email the current members, send an email to mailto:stability-working-group@ch
   - HLS, Meta: Pepe Iborra
   - head.hackage: Ryan Scott (cannot attend calls)
 - Library authors
-  - Dmitrii Kovanikov
   - Tom Sydney Kerckhove
   - Viktor Dukhovni
+- Educators
+  - Dmitrii Kovanikov
 - Consultants
   - Trevis Elser
 - Industrial users
