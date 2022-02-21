@@ -4,6 +4,9 @@
 Charter, December 2021
 
 ## 1. Purpose of the working group
+
+**The working group seeks to determine how to manage change, and mitigate its costs.**
+
 Haskell serves (at least) two roles:
 
 * [A] As a production language used by thousands of developers to get their day job done.
@@ -17,7 +20,7 @@ This tension cannot be removed entirely.  The goal of the working group is to mi
 
 One alternative would be to move to a policy of 100% stability, especially of the language itself and its APIs; that is, no breaking changes. There are other language ecosystems that do this.   But the Haskell Foundation believes that would be a mistake to seek 100% stability, a mistake that would kill off the ferment of intellectual change, deep research, and innovative (and genuinely useful) features that characterise the Haskell ecosystem.  Haskell is a thought leader, and must continue to grow and change.
 
-**So then the question becomes one of how to manage change, and mitigate its costs.  That is what the working group seeks to do.**
+So then the question becomes one of how to manage change, and mitigate its costs.  That is what the working group seeks to do.
 
 ## 2. Members
 The Stability Working Group currently has the following members:
