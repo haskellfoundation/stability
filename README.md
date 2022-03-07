@@ -22,7 +22,6 @@ To email the current members, send an email to mailto:stability-working-group@ch
   - Chris Dornan
   - Andrew Boardman
 - Ecosystem
-  - CLC: Bodigrim
   - GHC: Ben Gamari
   - Stackage, Hackage: Adam Bergmark
   - Cabal: Mikolaj Konarski
