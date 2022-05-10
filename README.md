@@ -20,7 +20,7 @@ To email the current members, send an email to mailto:stability-working-group@ch
   - Simon Peyton Jones
   - Alexander Bernauer
   - Chris Dornan
-  - Andrew Boardman
+  - David Thrane Christiansen
 - Ecosystem
   - GHC: Ben Gamari
   - Stackage, Hackage: Adam Bergmark
