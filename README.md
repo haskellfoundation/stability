@@ -14,6 +14,10 @@ for the announcement of the group.
 
 To email the current members, send an email to mailto:stability-working-group@chrisdornan.com
 
+## Meeting Minutes
+
+Minutes from our meetings are available in the [meetings](meetings/) directory of this repository.
+
 ## Current Members
 
 - HF
