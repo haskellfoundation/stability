@@ -1,0 +1,67 @@
+SWG 2022-12-12
+==============
+
+Meeting URL: https://meet.jit.si/StableHaskellMeetBiWeekly
+
+Previous meeting [notes](https://github.com/haskellfoundation/stability/blob/main/meetings/2022-11-28.md)
+
+## Agenda & Notes
+
+### New items
+
+ - [TWG proposal](https://github.com/haskellfoundation/tech-proposals/pull/47) to allow `base` updates to be decoupled from GHC updates
+
+   - We generally like this, but fear that it's too ambitious
+   - It seems to us that this proposal is so large that actually getting it implemented would be risky
+   - We discussed that tackling the base-GHC coupling first seems most likely to give a short-term win, rather than different IO systems
+   - At the very least it seems that there's two proposals here: the stability split and the topical split
+   - We'll post this as feedback
+   - Ben will link to th-abstraction in the discussion
+
+### Updates on in-progress work
+  - GHC API discussed [previously](https://github.com/haskellfoundation/stability/blob/main/meetings/2022-10-17.md)
+    - Previously holding the token: David
+    - No update due to token-holder being busy
+   
+  - [Update on Language/compiler features to help stability](https://edit.smart-cactus.org/jeFTSfj9SRun6ywmj1Tqcw?view), specifically [#4879](https://gitlab.haskell.org/ghc/ghc/-/issues/4879)
+    - Previously holding the token: David + Simon
+    - Seeking volunteers for #4879 (deprecating exports); none yet; think about HF funding for this
+    - Are there any other tasks for which modest HF funding would unlock real value? We should discuss before committing funds.
+     
+  - Bulletin discussed [previously](https://github.com/haskellfoundation/stability/blob/main/meetings/2022-10-17.md)
+    - Previously holding the token: Chris
+    - Too busy, look again in January
+  - GHC warning policy document as discussed [previously](https://github.com/haskellfoundation/stability/blob/main/meetings/2022-05-30.md)
+    - Previously holding the token: Chris
+    - Too busy, look again in January
+  - What is the stable  API of base
+    - Update PVP to explicitly mention the 'Internal' convention
+      - Previously holding the token: Ben
+      - Proposal: https://github.com/haskell/pvp/pull/46.  Proposes that any module with `Internal` in the name is not subject to the PVP, even if that module is exposed.  
+      - This proposal would codify a common but not universal convention; indeed according to Chris many packages do not follow the PVP in this sense (i.e. they gaily change the API of exposed module that have `Internal` in their name).
+
+      - Exposed because (a) power users may need them and are willing to put up with breakage (b) expose interface for tests.
+      - Consensus is that this is a breaking change to the PVP itself, which require a new version of it
+      - We're not sure what it means to have a new major version of PVP
+      - The power/weight ratio of this particular change is unclear for the purposes of solving the `base` interface issue
+      - An alternative design pattern: release two packages (typically held in one repo), `foo` and `foo-internal`. The former is what you would normally depend on; the latter is just for those power users and tests.  The Racket convention is to do this (with component packages for private internals, docs, and tests).
+      - Perhaps it is counter productive to seek clarity?   Maybe our current state of constructive ambiguity is better?
+      - [CLC owns PVP](https://github.com/haskell/core-libraries-committee#readme).  "CLC (jointly with Hackage Admins) maintains Haskell Package Versioning Policy. Minor changes (fixing typos, clarifications, recommended practices) can be approved by CLC vote, while bigger, potentially breaking changes require agreement from Hackage Admins as well. Proposals should be raised at PVP issue tracker."
+      - Conclusions: 
+          - Park this; focus on `base`.
+          - Write a best-practice working paper that describes the goals and alternatives, namely
+              - how easy it is to do adopt a 2-package solution, and perhaps 
+              - the `Internal` naming convention too (while acknowledging that this path does not follow the PVP, and perhpas pointing to the PVP issue about this point).
+          - We agreed that this would be a Good Thing, but no volunteers (yet)
+      - Ideas that were discusssed:
+          - `.Internals` module naming convention (https://github.com/haskell/pvp/pull/46)
+          - Two-library approach (e.g. an aggressively versioned`attoparsec-internals`)
+          - `UNSTABLE` pragma
+          - Failure modes: Tooling can silently introduce both module and package dependencies unbeknownst to the user
+
+
+
+### Parked for absence of token holder
+
+  - [Creating and maintaining a set of hlint rules to promote stability](https://github.com/haskellfoundation/stability/pull/14)
+    - Previously holding the token: Trevis
