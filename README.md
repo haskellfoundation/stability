@@ -12,7 +12,7 @@ for the announcement of the group.
 
 ## Contacting Us
 
-To email the current members, send an email to mailto:stability-working-group@chrisdornan.com
+To email the current members, send an email to mailto:stability@haskell.foundation
 
 ## Meeting Minutes
 
