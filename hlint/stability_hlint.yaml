@@ -1,0 +1,9 @@
+# Turn off all rules by default so we only include our explicit configuration.
+- ignore: { }
+
+# Turn on restricted module configurations to be warnings.
+- warn: {name: "Avoid restricted module"}
+
+- modules:
+  - {name: Control.Monad.Trans.Error, within: []} # This module is deprecated.
+  - {name: Control.Monad.Trans.List, within: []} # This module is deprecated.
