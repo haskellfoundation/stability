@@ -22,21 +22,13 @@ Minutes from our meetings are available in the [meetings](meetings/) directory o
 
 - HF
   - Simon Peyton Jones
-  - Alexander Bernauer
-  - Chris Dornan
-  - David Thrane Christiansen
+  - Jose Calderon
 - Ecosystem
-  - GHC: Ben Gamari
-  - Stackage, Hackage: Adam Bergmark
   - Cabal: Mikolaj Konarski
-  - HLS, Meta: Pepe Iborra
+  - GHC: Teo Camarasu, Andreas Klebinger
   - head.hackage: Ryan Scott (cannot attend calls)
 - Library authors
-  - Tom Sydney Kerckhove
-  - Viktor Dukhovni
 - Educators
 - Consultants
   - Trevis Elser
-- Industrial users
-  - Neil Mitchell
-  - Michael Peyton Jones
+  - Jappie Klooster
